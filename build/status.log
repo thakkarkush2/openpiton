@@ -1,0 +1,7 @@
+Diag: build                                      FAIL (TILE0 NOC1 credit overflow)
+Fri Oct  9 03:26:03 PM IST 2026
+sim.log: #             36811000 : Simulation -> FAIL(TILE0 NOC1 credit overflow)
+sim.log: #             36816000 : Simulation -> FAIL(TILE0 NOC1 credit overflow)
+sim.log: #             36821000 : Simulation -> FAIL(TILE0 NOC1 credit overflow)
+sim.log: # 36811500 : Simulation -> FAIL(TILE0 NOC1 credit overflow)
+NumTiles=         0

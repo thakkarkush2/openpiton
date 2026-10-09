@@ -1,0 +1,5 @@
+__design_bin_path=/home/kthakkar/openpiton_new/openpiton/build
+incr_run_version=32768
+incr_partial_run_stats=0:0
+incr_no_change_stats=0:0
+opt_data_elab=/home/kthakkar/openpiton_new/openpiton/build/manycore/rel-0.1/work/@_opt

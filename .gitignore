@@ -1,10 +1,10 @@
 *.nfs*
 *.swp
-*.log
+#*.log
 *a.out
 
 # Ignore everything in model directory
-build/*
+#build/*
 !build/.keep
 
 # Ignore generated logs from back-end

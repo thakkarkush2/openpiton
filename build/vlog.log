@@ -1,0 +1,18 @@
+===============================================
+=== OpenSPARC T1 ProcVlog Version 1.99      ===
+===============================================
+sort mode
+
+===== Opening sim.log ======
+Will extract instruction info from:  diag.exe 
+# vsim -c -lib /home/kthakkar/openpiton_new/openpiton/build/manycore/rel-0.1/work -do "run -all" cmp_top -pli "/home/kthakkar/openpiton_new/openpiton/piton/tools/Linux/x86_64/lib/libmodelsimpli.so" "+wait_cycle_to_kill=10" "+dowarningfinish" "+doerrorfinish" "+spc_pipe=0" -64 "+cpx_backpressure" "+TIMEOUT=10000000" "+tg_seed=0" "+good_trap0=0000000080000540" "+bad_trap0=0000000080000542" "+asm_diag_name=hello_world.c" "+dv_root=/home/kthakkar/openpiton_new/openpiton/piton" 
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=5.
+# rtl_timeout =    10000000
+#                   20: bad_trap 0080000542
+#             36811000 : Simulation -> FAIL(TILE0 NOC1 credit overflow)
+#             36816000 : Simulation -> FAIL(TILE0 NOC1 credit overflow)
+#             36821000 : Simulation -> FAIL(TILE0 NOC1 credit overflow)
+# 36811500 : Simulation -> FAIL(TILE0 NOC1 credit overflow)
+# Errors: 0, Warnings: 6
+
+Bye
