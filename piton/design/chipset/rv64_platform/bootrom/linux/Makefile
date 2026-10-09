@@ -1,10 +1,10 @@
 UART_FREQ ?= 30000000
 MAX_HARTS ?= 1
-CROSSCOMPILE ?= riscv64-unknown-elf-
+CROSSCOMPILE = $(HOME)/scratch/riscv_install/bin/riscv64-unknown-elf-
 CC = ${CROSSCOMPILE}gcc
 PYTHON=python3
 
-CFLAGS = -DMAX_HARTS=$(MAX_HARTS) -DUART_FREQ=$(UART_FREQ) -Os -ggdb -march=rv64imac -mabi=lp64 -Wall -mcmodel=medany -mexplicit-relocs
+CFLAGS = -DMAX_HARTS=$(MAX_HARTS) -DUART_FREQ=$(UART_FREQ) -Os -ggdb -march=rv64imac_zicsr_zifencei -mabi=lp64 -Wall -mcmodel=medany -mexplicit-relocs
 CCASFLAGS = -mcmodel=medany -mexplicit-relocs
 LDFLAGS = -nostdlib -nodefaultlibs -nostartfiles
 
